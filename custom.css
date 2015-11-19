@@ -1,0 +1,213 @@
+.csi-link {
+	color: #333;
+}
+
+.datipiemonte-link {
+	color: #333;
+}
+
+.flag_sq {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.flag_4x3 {
+	display:inline-block;
+	width: 32px;
+	height: 24px;
+	border-radius: 2px;
+	overflow: hidden;
+	margin: 6px;
+}
+
+
+.portalName_sq {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.portalName_sq_big {
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 2px;
+	overflow: hidden;
+	margin: 6px;
+	margin-right: 12px;
+}
+.table td.single_icon{text-align: center;}
+.bs-footer {
+	border-top: 1px solid #E5E5E5;
+	margin-top: 100px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	text-align: center;
+	color: #777777;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.bs-footer a {
+	color: #777777;
+}
+
+.bs-footer .win-commandring{
+    color:#777777;
+    border-color:#777777;
+}
+
+.bs-footer  .win-label{
+    color:#777777!important;
+}
+
+#searchSubmit,#resetSearchFilterBtn{
+	font-size:24px;
+	line-height:34px;	
+}
+
+#searchSubmit i ,#resetSearchFilterBtn i{
+    font-size:32px;
+    line-height:32px;
+    margin-left:20px;
+}
+#resetSearchFilterBtn{color:white;}
+
+#main-menu-home.active, #pivot-item-1 h1, .home-color{ color: #F400A1;}
+#main-menu-test.active,#pivot-item-2 h1, .test-color{ color: #73D216;}
+#main-menu-documentation.active,#pivot-item-3 h1,.documentation-color{ color: #b50000;}
+#main-menu-utilities.active,#pivot-item-4 h1,.utilities-color{ color: #ff9900;}
+#main-menu-statistics.active,#pivot-item-5 h1,.statistics-color{ color: #EDD400;}
+
+.dark-link, .dark-link:hover{color: #333333;text-decoration: none;}
+
+
+.pivot-headers{
+    padding-bottom:10px;
+    margin-bottom:10px;
+	border-bottom:1px solid #e5e5e5;
+}
+.pivot-headers a{
+	padding-right: 1em;
+}
+
+.home li{ font-size: 14pt; padding: .5em 0;margin-left: 2em;}
+
+#homeNewsPanel{font-size:12pt;}
+.home-news-link{ border-top: solid 1px #e5e5e5;  border-bottom: solid  1px #e5e5e5;  padding: .2em; display: inline-block;}
+.home-news-link a{text-decoration: none; color: #555555;}
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 12s linear infinite;
+	z-index: 10;
+	position: relative;
+}
+
+.marquee:hover {animation-play-state: paused;}
+
+@keyframes marquee {
+   0%   { text-indent: 16em }
+   100% { text-indent: -56em }
+}
+
+.marquee-blur{
+	width: 38em;
+	position: relative;
+	height: 100%;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.documentation  table.table-documentation{ border-spacing: 10px; border-collapse: separate;}
+.table-url  td{text-align: center;}
+
+.url{font-family: "Courier New", Courier, monospace;font-weight: bold;}
+
+.documentation td.url-brace{
+    border-bottom:1px solid #555753;
+    border-left:1px solid #555753;
+    border-right:1px solid #555753;
+    height:8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.documentation td{vertical-align: top;}
+
+.documentation-word-manual{font-size: 18pt; margin: 1em 0;}
+.documentation-word-manual-link-grey{color: #333;}
+
+
+.doc-baseurl-color{color: #19aeff;}
+.doc-context-color{color: #ff00ff;}
+.doc-parameters-color{color: #9966cc;}
+
+.doc-baseurl-panel{border-left: dashed 3px #19aeff;padding-left: 1em; margin-left: 1em;margin-top: 1em;}
+.doc-context-panel{border-left: dashed 3px #ff00ff;padding-left: 1em; margin-left: 1em;margin-top: 1em;}
+.doc-parameters-panel{border-left: dashed 3px #9966cc;padding-left: 1em; margin-left: 1em;margin-top: 1em;}
+
+.table-concepts{width; auto;}
+.table-concepts td{text-align: left;}
+
+.utility-content-panel{padding-left: 1em; margin-left: 1em;border-left: dashed 3px #eeeeec;}
+.utility-content-panel p{margin: 2em 0;}
+
+#checkTagResultMessage, #checkTagOKIcon,#checkTagKOIcon{font-size: 18pt;}
+#checkTagOKIcon, .checkTagOKColor{color: #9ade00;}
+#checkTagKOIcon,.checkTagKOColor{ color: #ff4141;}
+#checkTagResultMessage {padding-left: .5em; font-weight: bold;}
+#checkTagResultCounter{padding-left: 1em;}
+
+.statistics-legend-bullet{display: inline-block;width: 1em;height: 1em;margin-right: .5em;border-radius: 2px;}
+
+#tagCloudPanel{clear-both; padding: .5em; border: solid #ff9900 3px; border-radius: 6px;}
+.tag-cloud-item {
+	text-align: center;
+	padding: .3em;
+	font-weight: bold;
+}
+
+.check-tag-lis-header-container{margin-left: 0!important;}
+
+.check-tag-list-tag{border-radius: 4px; padding:.2em .5em; margin:.2em; display: inline-block;}
+.check-tag-list-tag-ok, .check-tag-list-td-ok{background-color: #9ade00;}
+.check-tag-list-td{display: block; width: 2em; height: 2em; border-radius: 4px;margin: .3em;}
+.check-tag-list-tag-ko{background-color: #ddd;}
+.check-tag-list-td-ko{background-color: #ff4141;}
+.check-tag-list-tag-NaN{background-color: #e0b0ff;}
+.check-tag-list-warning{color: #edd400; font-size: 2em; }
+
+.check-tag-list-total{color: #999;}
+.check-tag-list-total-ok{color: #9ade00;}
+.check-tag-list-total-ko{color:  #ff4141;}
+
+#checkTagListWin{font-size: 1.8em;}
+.trophy-gold{color: #D4AF37; }
+.trophy-silver{color: #C0C0C0; }
+.trophy-bronze{color: #CD7F32;}
+
+
+.moved{text-align: center;}
+.moved i{padding:  .2em .3em;display: inline-block;}
+.moved-first-icon{ font-size: 48pt;transform:rotate(30deg);-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);color: #999;}
+.moved-second-icon{ font-size: 64pt;transform:rotate(10deg);-ms-transform:rotate(10deg);-webkit-transform:rotate(10deg);color: #666;}
+.moved-third-icon{ font-size: 128pt;transform:rotate(-15deg);-ms-transform:rotate(-15deg);-webkit-transform:rotate(-15deg);color: #333;}
+
+.moved h1{font-size: 64pt; margin-bottom: .7em;}
+.moved p{font-size: 24pt;padding: .5em 0;}
+.moved .small{font-size:16pt;}
+.moved .smaller{font-size:10pt;}
+.moved-footer {margin-top: 20px!important;}
+

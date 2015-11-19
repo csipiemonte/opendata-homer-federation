@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <meta name="viewport" content="width=device-width">
+
+   <title>Homer Federated Search Engine - Test Page</title>
+
+   <meta name="robots" content="noindex, nofollow">
+
+   <!-- remove or comment this line if you want to use the local fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootmetro.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootmetro-responsive.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootmetro-icons.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootmetro-ui-light.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/datepicker.css">
+   <link rel="stylesheet" type="text/css" href="./custom.css">
+
+
+   <!-- Le fav and touch icons -->
+   <link rel="shortcut icon" href="./assets/ico/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+   <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+   <script src="./assets/js/modernizr-2.6.2.min.js"></script>
+   <script type="text/javascript"  src="plugin/prefixfree.js"></script>
+  
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   <script type="text/javascript" src="app.js"></script>
+   <script>
+	$(document).ready(function() {
+		init();
+	});
+	</script>
+	<link rel="icon" href="favicon.png" type="image/png" />
+</head>
+
+<body>
+   <!--[if lt IE 7]>
+   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+   <![endif]-->
+
+   <!-- Header
+   ================================================== -->
+   
+	<header id="nav-bar" class="container">
+		<div class="row">
+			<div class="span12">
+				<div id="header-container">
+					<h5>Federated Search Engine Page</h5>
+					<div class="dropdown">
+						<a class="header-dropdown dropdown-toggle accent-color" href="http://homerproject.eu/" target='_blank'>
+							 Homer Project
+						</a>
+					</div>
+				</div>
+				<div id="top-info" class="pull-right">
+					<a id="settings" href="http://www.csipiemonte.it/en/" target='_blank'class="win-command pull-right">
+						<span class="win-commandimage win-commandring">
+							<img src="assets/img/Logo-CSI.png" width="42" height="42" alt=""/>
+						</span>
+					</a>
+					<div class="pull-left">
+					   <h3><a href="http://www.csipiemonte.it/en/" target='_blank' class='csi-link'>CSI Piemonte</a></h3>
+					   <h4><a href="http://www.dati.piemonte.it/" target='_blank' class='datipiemonte-link'>Open Data Piedmont</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+	<div class="container">
+		<div class="row">
+			<div class="metro span10 offset1">
+				<div id="pivot" class="pivot slide">
+					<div class="pivot-headers">
+						<a id="main-menu-home" href="#pivot" data-pivot-index="0"  class="active"><i class='icon-house '></i> Home</a>
+						<a id="main-menu-test" href="#pivot" data-pivot-index="1"><i class='icon-lab '></i> Search Page</a>
+						<a id="main-menu-documentation" href="#pivot" data-pivot-index="2"><i class='icon-book '></i> Documentation</a>
+						<a id="main-menu-utilities" href="#pivot" data-pivot-index="3"  class=""><i class='icon-star-2 '></i> Utilities</a>
+						<a id="main-menu-statistics" href="#pivot" data-pivot-index="4"  class=""><i class='icon-chart-3 '></i> Statistics</a>
+					</div>
+					<div class="pivot-items">
+						<div id="pivot-item-1" class="pivot-item active">
+							<div class='home'>
+								<div class="page-header">
+									<h1>Welcome to the Federated Search Engine <small></small></h1>
+								</div>
+								
+								<div class='panel-description '>
+									
+									<div class='marquee-blur pull-right'>
+										<h3 class='home-news-link marquee'>
+											<a href='#' id='news-marquee-link'>
+												<i class='icon-new home-color'></i> News -   
+												 
+												<i class=' icon-bars-5 statistics-color'></i> Statistic on EuroVOC Concept</span> - 
+												<i class=' icon-arrow-up-9  test-color'></i> New sort options</span> - 
+												<i class='icon-library  utilities-color'></i> Verify EuroVOC Tags</span> - 
+												<i class='icon-spell-check   utilities-color'></i> Check Portal Tags</span> - 
+												<i class='icon-flag-3 test-color'></i> Flags &amp; Logos</span> - 
+												<i class='icon-tags  utilities-color'></i> Tags Cloud</span> - 
+												<i class='icon-filter-3  documentation-color'></i> Logical Operator on Query</span>
+											</a>
+										</h3>
+									</div>
+									
+									<h3>Here you can find</h3>
+									<p>&nbsp;</p>
+									<ul class="unstyled">
+										<li><i class='icon-lab test-color'></i> <a  href="#pivot" data-pivot-index="1" class='dark-link'>A complete search page connected with the production Engine, where you can try all the queries</a></li>
+										<li><i class='icon-book documentation-color'></i>  <a  href="#pivot" data-pivot-index="2" class='dark-link'>The documentation to use the Federated Multilanguage Search Engine from your own portal</a></li>
+										<li><i class='icon-star-2 utilities-color'></i>  <a  href="#pivot" data-pivot-index="3" class='dark-link'>Some useful features like an API that exposes the list of the EuroVoc Tags</a></li>
+										<li><i class='icon-chart-3 statistics-color'></i>  <a  href="#pivot" data-pivot-index="4" class='dark-link'>Reports to monitor the datasets inside the federation</a></li>
+										
+									</ul>
+									<p>&nbsp;</p>
+								</div>
+								<div class="row">
+									<div class='offset1 span3'>
+										<h3 class="text-info">Project</h3>
+										<a href="http://www.homerproject.eu" target='_blank'><img src='assets/img/logo-homer.jpg' alt='Homer Project' title ='Homer Project'></a>
+										<h3 class="text-info">Powered by</h3>
+										<a href="http://www.csipiemonte.it/en/" target='_blank'><img src='assets/img/logo_csipiemonte.jpg' alt='CSI Piemonte' title ='CSI Piemonte'></a>
+									</div>
+									<div class='offset2 span4' >
+											<h3 class="text-info span3">Confinanced by</h3>
+											<a href="http://www.programmemed.eu/" target='_blank'><img src='assets/img/logo_programMed.jpg' alt='MED Programme' title ='MED Programme' class='span3'></a>
+									</div>	
+									
+								</div>
+								<p>&nbsp;</p>
+								<div id="homeNewsPanel">
+									<h3><i class='icon-new home-color'></i>&nbsp;What's new<small></small></h3>
+									<table class='table'><tbody>
+										<tr><td><i class='icon-bars-5  statistics-color'></i>&nbsp;<a href="#pivot" data-pivot-index="4">  New statistic on <strong>EuroVOC Concept</strong> in each <strong>portal</strong></td><td class="muted">30/04/2014</td></tr>
+										<tr><td><i class=' icon-arrow-up-9  test-color'></i>&nbsp;<a href="#pivot" data-pivot-index="1"> Specified how to <strong>sort</strong> the result of the search by <strong>creation and modified date</strong></td><td class="muted">22/04/2014</td></tr>
+										<tr><td><i class='icon-library  utilities-color'></i>&nbsp;<a href="#pivot" data-pivot-index="3"> A better way to <strong>check the validity of an EuroVOC tag</strong> </td><td class="muted">17/04/2014</td></tr>
+										<tr><td><i class='icon-spell-check utilities-color'></i>&nbsp;<a href="#pivot" data-pivot-index="3"><strong> check EuroVOC tags in portals</strong>, with <strong>statistic</strong> and <strong>detail list</strong> of data with tags</td><td class="muted">10/04/2014</td></tr>
+										<tr><td><i class='icon-flag-3 test-color'></i>&nbsp;<a href="#pivot" data-pivot-index="1"><strong>logo of the portals</strong> and <strong>flags of the country</strong> in search results, </a></td><td class="muted">31/03/2014</td></tr>
+										<tr><td><i class='icon-tags utilities-color'></i>&nbsp;<a href="#pivot" data-pivot-index="3">Example code to build a <strong>Tags Cloud</strong></a></td><td class="muted">18/03/2014</td></tr>
+										<tr><td><i class='icon-filter-3  documentation-color'></i>&nbsp;<a href="#pivot" data-pivot-index="2">Detailed specification on how to use <strong>filters on logical operator</strong> AND, OR and NOT in <strong>search queries</strong></a></td><td class="muted">18/03/2014</td></tr>
+									</tbody></table>
+								</div>
+								
+									
+							</div>
+						</div>
+						<div id="pivot-item-2" class="pivot-item">
+							<div class="metro-sections">
+								<div class="page-header">
+									<h1>Search page of the Federated Search Engine <small></small></h1>
+								</div>
+								<div id="searchInputPanel"></div>
+								<h3>Search</h3>
+									<form class='form'>
+										<fieldset>
+											<legend>Input parameter</legend>
+											<div class="controls controls-row">
+												<label class='span1'>Input text</label>
+												<input class='span8'type="text" value="*:*" placeholder="for all result insert *:*" id="inputSearchText" class="input-xxlarge" >&nbsp;&nbsp;
+												<a href="#" class="btn" id="clearSearchTextBtn" style='display:none'>Clear</a>
+											</div>
+											<div class="controls controls-row">&nbsp;</div>
+											<div class="controls controls-row">
+												<label class='span1 '>Input Language</label>
+												<select id="inputLangSelect" class='span3'>
+												</select>
+												<label class='span1 '>Output Language</label>
+												<select id="outputLangSelect" class='span3' multiple="multiple">
+												</select>
+											</div>
+											<div class="controls controls-row">
+												<label class='span1'>Tags</label>
+												<select id="tagSelect" class=' span3'multiple="multiple">
+												</select>					
+												<label class='span1 offset1'>Portal</label>
+												<select id="portalSelect" class='input-small span3'multiple="multiple">
+												</select>
+											</div>
+											<div class="controls controls-row">&nbsp;</div>
+										</fieldset>
+										<fieldset>
+											<legend>Output</legend>
+											<div class="controls controls-row">
+												<label class='span1'>Output Format</label>
+												<select id="outputFormatSelect" class=' span3'>
+													<option value='json'>JSon</option>
+													<option value='xml'>XML</option>
+												</select>	
+												<label class='span1'>Sort by</label>
+												<select id="sortBySelect" class=' span2'>
+												</select>	
+												
+												<div class='span2'>
+													<label class="radio" >
+														<input type="radio" name="sortOrderRadioGroup" id="sortOrderAscRadio" value="asc">
+														<span class="metro-radio"><i class="icon-arrow-up"></i> Ascending</span>
+													</label>
+													<label class="radio" >
+														<input type="radio" name="sortOrderRadioGroup" id="sortOrderDescRadio" value="desc">
+														<span class="metro-radio"><i class="icon-arrow-down"></i> Descending</span>
+													</label>						
+												</div>
+											</div>
+										</fieldset>
+										<p>&nbsp;</p>
+										
+										<div class="controls controls-row">
+											<a href="#" class="btn btn-large span2 offset4" id="resetSearchFilterBtn">Reset<i class="icon-spin"></i></a>
+											<a href="#" class="btn btn-large btn-primary span2 " id="searchSubmit">Search<i class="icon-search-3"></i></a>
+										</div>
+									</form>		
+								<p>&nbsp;</p>
+								<div id="resultListPanel"></div>
+								<div class="row">
+							
+									 <div class="span8">
+										<h3>Results&nbsp;&nbsp;<small>Number of results: <strong><span id='responseNumFound'></span></strong>&nbsp;Elapsed time: <strong>
+										<span id='responseQTime'></span></strong></small></h3>
+									</div>
+									<div class="span2">
+										<div class='text-right'><a href="#" class='scrollSearchInput' ><span class="icon-arrow-up-5" aria-hidden="true"></span> Back to search filter</a></div>
+									</div>
+								</div>
+								<p>&nbsp;</p>
+								<div class="alert alert-info hide" id='info-message-panel'>No data found</div>
+								<p>&nbsp;</p>
+								<p>Search url &nbsp;&nbsp;<code><a id="searchUrl" href="" target='_blank'></a></code></p>
+								<p><a href='#' id='showSearchUrlProxy' class=''>Show search url proxy</a> 
+									&nbsp;&nbsp;<code style="display:none;" id='searchUrlProxyContainer'><a  id="searchUrlProxy" href="" target='_blank'></a></code>
+								</p>
+								<div>&nbsp;</div>
+				
+				
+								<div class="clearfix">
+									 <div class="pull-left">
+										<h4>Result list</h4>
+									</div>
+									<div class="pull-right">
+										<div class='hide' id='paginationStart'></div>
+										<div class="pagination pagination-right">
+											<ul id='paginationUl'>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+
+								<table class="table table-condensed">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>&nbsp;</th>
+											<th>Portal</th>
+											<th>Package ID</th>
+											<th>Lang</th>
+											<th>Country</th>
+											<th>Title</th>
+											<th>Detail</th>
+										</tr>
+									</thead>
+									<tbody id='resultListTableBody'>
+									</tbody>
+								</table>
+								<p id='detailPanelAnchor'>&nbsp;</p>
+								<div class="row">
+									 <div class="span8">
+										<h4>Detail - package <span id='detailPackageId'></span></h4>
+									</div>
+									<div class="span2">
+										<div class='text-right'><a href="#" class='scrollResultList' ><span class="icon-arrow-up-5" aria-hidden="true"></span> Back to result list</a></div>
+									</div>
+								</div>
+								<div class="well">
+									 <table class="table table-condensed">
+										<tbody id='resultDetailTableBody'>
+										</tbody>
+									</table>
+								</div>
+							</div>
+									
+
+						</div>
+						<div id="pivot-item-3" class="pivot-item">
+							<div class="page-header">
+								<h1>Documentation<small></small></h1>
+							</div>
+							<div class='documentation'>
+								<div class='row'>
+									<div class='span7 '>
+										<p>
+											The Federated Multilanguage Search Engine is base on the opensource project <a href='https://lucene.apache.org/solr/' target='_blank'>Apache Solr</a>. Please refer to the official documentation to have a comprehensive guide
+										</p>
+										<p>Usefull link for documentation and tutorial 
+											<div class='row'>
+												<div class='span2'><a target='_blank' href="https://wiki.apache.org/solr/SolrQuerySyntax">SolrWiki.org</a></div>
+												<div class='span1'><i class='icon-arrow-right-9 '></i></div>
+												<div class='span4'>Wiki Solr Query Sintax</div>
+											</div>
+											<div class='row'>
+												<div class='span2'><a target='_blank' href="http://wiki.apache.org/solr/CommonQueryParameters">SolrWiki.org</a></div>
+												<div class='span1'><i class='icon-arrow-right-9 '></i></div>
+												<div class='span4'>Wiki Solr Query Parameters</div>
+											</div>
+											<div class='row'>
+												<div class='span2'><a target='_blank' href="http://www.lucenetutorial.com/lucene-query-syntax.html">LuceneTutorial.com</a></div>
+												<div class='span1'><i class='icon-arrow-right-9 '></i></div>
+												<div class='span4'>Tutorial on Query Sintax</div>
+											</div>								
+										</p>
+									</div>
+									<div class='span2 offset1'>
+										<a href="https://lucene.apache.org/solr/" target='_blank'><img src='assets/img/logo_solr.jpg' alt='Apache Solr'></a>
+										<p>&nbsp;</p>
+										<a href="http://eurovoc.europa.eu/" target='_blank'><img src='assets/img/logo_eurovoc.png' alt='EuroVoc'></a>
+									</div>
+								</div>
+								
+								<p class='documentation-word-manual'><strong><a href='./Use_Case_Federated_Search_Engine.doc' target='_blank' >
+									<i class=' icon-file-word  documentation-word-manual-link-grey'></i>
+									<span class='documentation-word-manual-link-grey'> Use Case Semantic Multilanguage Search </span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<i class=' icon-download-2  '> </i> 
+								</a></strong></p>
+								<p>&nbsp;</p>
+								<p>Below a quick summary of the parameters needed to construct a search query</p>
+								<p>&nbsp;</p>
+								<h2>Query</h2>
+								
+								<p>
+									The search url is composed in this way
+								</p>
+								<div class='table-url'>
+									<table class='table-documentation'><tbody>
+										<tr>
+											<td class='url doc-baseurl-color'>http://opendata-federation.csi.it/fed-homer/</td>
+											<td><span class='url doc-context-color'><i>context</i></span>/select/?</td>
+											<td class='url doc-parameters-color'><i>parameters</i>
+										</tr>
+										<tr>
+											<td class='url-brace'></td>
+											<td class='url-brace'></td>
+											<td class='url-brace'></td>
+										</tr>
+										<tr>
+											<td>Base url</td>
+											<td>Search context</td>
+											<td>Parameters</td>
+										</tr>
+
+										
+									</tbody></table>
+								</div>
+								<p>&nbsp;</p>
+								<h3 class='doc-baseurl-color'>Base URL</h3>
+								<div class='doc-baseurl-panel'>
+									<p>Is the root of every query</p>
+								</div>
+								<p>&nbsp;</p>
+								<h3 class='doc-context-color'>Search Context</h3>
+								<div class='doc-context-panel'>
+									<p>
+									
+										<table><tbody>
+											<tr>
+												<td><strong>documents</strong></td>
+												<td>the data indexed</td>
+												<td class='url'>http://opendata-federation.csi.it/fed-homer/<span class='url doc-context-color'>documents</span>/select/?q=culture</td>
+											</tr>
+											<tr>
+												<td><strong>ontology</strong></td>
+												<td>the data indexed</td>
+												<td class='url'>http://opendata-federation.csi.it/fed-homer/<span class='url doc-context-color'>ontology</span>/select/?q=*:*</td>
+											</tr>									
+										</tbody></table>
+									</p>
+								</div>
+								<p>&nbsp;</p>
+								<h3  class='doc-parameters-color'>Parameters</h3>
+								<div class='doc-parameters-panel'>
+									
+									<div class='row'>
+										<div class='span1 doc-parameters-color'><strong>Parameter</strong></div>
+										<div class='span5 doc-parameters-color'><strong>Description</strong></div>
+										<div class='span3 doc-parameters-color'><strong>Values</strong></div>
+									</div>
+									<div class='row'>
+										<div class='span1'><strong>q</strong></div>
+										<div class='span5'>
+											This is the main parameter, <strong>the search string</strong>
+											<p>
+												<strong>Logical operator</strong> AND, OR and NOT are <strong>supported</strong>.
+												Is enough put search terms in brackets separated by <strong><i class="documentation-color">&lt;space&gt;operator&lt;space&gt;</i></strong>
+											</p>
+										</div>
+										<div class='span3'>
+											Free text, to search everything use <strong class='url'>*:*</strong>
+										</div>
+									</div>
+									<div class='row'>
+										<div class='span8 offset1'>
+											<span class="label label-info">Example</span>
+											<table  class="table table-condensed">
+												<thead>
+													<tr><th>Search input</th><th>Parameter q</th><th>Url</th></tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Search data with both term <strong><i>acqua</i></strong> and <strong><i>Piemonte</i></strong></td>
+														<td class='url'>q=(acqua <span class="documentation-color">AND</span> Piemonte)</td>
+														<td><a href="http://opendata-federation.csi.it/fed-homer/documents/select/?q=(piemonte%20AND%20acqua)&wt=json" target='blank' class='btn btn-mini btn-inverse'>View</a></td>
+													</tr>
+													<tr>
+														<td>Search data with at least one term among <strong><i>acqua</i></strong> and <strong><i>Piemonte</i></strong></td>
+														<td class='url'> q=(acqua <span class="documentation-color">OR</span> Piemonte)</td>
+														<td><a href="http://opendata-federation.csi.it/fed-homer/documents/select/?q=(piemonte%20OR%20acqua)&wt=json" target='blank' class='btn btn-mini btn-inverse'>View</a></td>													
+													</tr>
+													<tr>
+														<td>Search data with term <strong><i>acqua</i></strong> and not <strong><i>Piemonte</i></strong></td>
+														<td class='url'>q=(acqua <span class="documentation-color">NOT</span> Piemonte)</td>
+														<td><a href="http://opendata-federation.csi.it/fed-homer/documents/select/?q=(piemonte%20NOT%20acqua)&wt=json" target='blank' class='btn btn-mini btn-inverse'>View</a></td>													
+													</tr>
+												</tbody>
+											</table>
+											<span class="label label-important">The logical operator AND, OR and NOT must be UPPERCASE </span>
+										</div>
+									</div>
+
+									<p>&nbsp;</p>
+									<div class='row'>
+										<div class='span1'><strong>lang</strong></div>
+										<div class='span5'>
+											the input language: when specified the search engine check if there is a correspondence in EuroVoc of the search terms (parameter <strong class='url doc-parameters-color'>q</strong>) and uses it. If not specified or if there isn't corrispondation, the search engine performs a literal search
+										</div>
+										<div class='span3 url'>
+											<ul class="unstyled">
+												<li>el - ελληνικά</li>
+												<li>en - English</li>
+												<li>es - Españoles</li>
+												<li>fr - Français</li>
+												<li>it - Italiano</li>
+												<li>sl - Slovencina</li>
+												<li>sr - Српски</li>
+											</ul>
+										</div>
+									</div>									
+									<p>&nbsp;</p>
+									<div class='row'>
+										<div class='span1'><strong>fq</strong></div>							
+										<div class='span5'>
+											Filter on query: it can be used multiple times in a single query, to filter on multiple values. The syntax is 
+											<span class='url'>fq=<i>field</i>%3A(<i>values separated by 'or' or 'and'</i>)</span>. For example to filter with output language in english and portal from dati.piemonte.it or open-data.me:
+											<span class='url'>fq=language%3A(en)&fq=portal%3A(www.dati.piemonte.it%20or%20www.open-data.me)</span>
+											<span class="label label-important">The colon between the field and the value must be encoded (<span class='url'>%3A</span>)</span>
+										</div>
+										<div class='span3 url'>
+											<ul class="unstyled">
+												<li>language</li>
+												<li>portal</li>
+												<li>tag</li>
+											</ul>
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									<div class='row'>
+										<div class='span1'><strong>start</strong></div>
+										<div class='span5'>
+											The first record for pagination. Default value: (zero), the first record
+										</div>
+										<div class='span3 '>
+											An integer number
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									<div class='row'>
+										<div class='span1'><strong>rows</strong></div>
+										<div class='span5'>
+											The number of records, for pagination. Default value: 10
+										</div>
+										<div class='span3 '>
+											An integer number
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									<div class='row'>
+										<div class='span1'><strong>wt</strong></div>
+										<div class='span5'>
+											The output format. Default value: <span class='url'>xml</span>
+										</div>
+										<div class='span3 '>
+											<ul class="unstyled">
+												<li>json</li>
+												<li>xml</li>
+											</ul>
+										</div>
+									</div>
+									<div class='row'>
+										<div class='span1'><strong>sort</strong></div>
+										<div class='span5'>
+											The sort order. Specify the field and if ascending or descending. For example to sort by author descending use 
+											<span class='url'>&sort=author%20desc</span>
+											<span class="label label-important">The space between the field and the order must be encoded (<span class='url'>%20</span>)</span>
+										</div>
+										<div class='span3'>
+											<p>In the utility section is explained how to retreive all the possible values</p>
+											<strong>Example</strong>
+											<ul class="unstyled">
+												<li>author</li>
+												<li>portal</li>
+												<li>...</li>
+											</ul>
+										</div>
+									</div>								
+								</div>
+							</div>
+						</div>
+						<div id="pivot-item-4" class="pivot-item">
+							<div id="utilitiesTopPanel"></div>
+							<div class="page-header">
+								<h1>Utilities<small></small></h1>
+							</div>
+							<p>
+								Some useful features to help on developing the search page
+								<ol>
+									<li><a href="#" id="utilitiesCheckEurovocLink">Check EuroVOC tag validity</a></li>
+									<li><a href="#" id="utilitiesCheckEurovocInPortalsLink">Check EuroVOC tags in portals</a></li>
+									<li><a href="#" id="utilitiesAutocompleteLink">Autocomplete text field with EuroVOC tags</a></li>
+									<li><a href="#" id="utilitiesServerProxyLink">Server Proxy</a></li>
+									<li><a href="#" id="utilitiesTagCloudLink">Tag Cloud</a></li>
+								</ol>
+							</p>
+							<p>&nbsp;</p>
+							<div id='utilitiesCheckEurovocPanel'></div>							
+							<h3>
+								1 - Check EuroVOC tag validity 
+								<div class='pull-right'><small><a href="#" class='utilitiesScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='utility-content-panel'>
+								<p>Insert a tag, and check if it is an EuroVOC tag</p>
+								<p>
+									<form id="checkTagForm" class="form-inline">
+										<div class="control-group" id="checkTagPanel">
+											<input type="text"  placeholder="EuroVOC TAG" id="checkTagText">&nbsp;
+											<select id="inputLangCheckTagSelect"></select>
+											<button type="submit" class="btn">Check</button>&nbsp;
+											<span id="checkTagWarning" class="help-inline" style="display:none;">Insert a value to check</span>
+										</div>
+									</form>
+								</p>
+								<div id="checkTagResultPanel" style='display:none;'>
+									<p>
+										<i class="icon-checkmark-3" id='checkTagOKIcon' style='display:none;'></i>
+										<i class="icon-cancel-2" id='checkTagKOIcon' style='display:none;'></i>
+										<span id='checkTagResultMessage' class='checkTagOKColor' ></span>
+										<span id='checkTagResultCounter'></span>
+									</p>
+									<p>Check url &nbsp;&nbsp;<code><a id="checkTagUrl" href="" target='_blank'></a></code></p>
+									<p><a href='#' id='showCheckTagUrlProxy' class=''>Show Check url proxy</a> 
+										&nbsp;&nbsp;<code style="display:none;" id='checkTagUrlProxyContainer'><a  id="checkTagUrlProxy" href="" target='_blank'></a></code>
+									</p>
+									<div  id="checkTagTableResultPanel">
+										<p>
+											<h4>List of tag found<small>Showing only the first 1000 records</small></h4>
+											<table class="table table-condensed  table-bordered">
+												<tbody class='url' id="checkTagTableBody">
+													<tr><td><strong>id</strong>: 20997</td>
+													<td><strong>conceptURI</strong>: 597</td>
+													<td><strong>language</strong>: it</td>
+													<td><strong>term</strong>: acqua</td></tr>
+												</tbody>
+											</table>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div id='utilitiesCheckEurovocInPortalsPanel'></div>
+							<h3>
+								2 - Check EuroVOC tags in portals
+								<div class='pull-right'><small><a href="#" class='utilitiesScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='utility-content-panel'>
+								<p>Choose an open data portal and check how many datasets contain EuroVOC tags</p>
+								<p>With this functionality is possible count how many dataset in an open data portal contain at least one EuroVOC tag. In the detail page, is possible to see all the datasets and their tags, where are highlighted in green datasets and tags EuroVOC compatible</p>
+								
+								<p>
+									<form id="checkTagPortalsForm" class="form-inline">
+										<div class="control-group" id="checkTagPortalsPanel">
+											<select id="inputCheckTagPortalsSelect" ></select>
+											<button type="submit" class="btn">Check</button>&nbsp;
+											<span id="checkTagPortalsWarning" class="help-inline" style="display:none;">Insert a portal to check</span>
+										</div>
+									</form>
+								</p>
+								<div  id="checkTagPortalsTableResultPanel" style="display:none">
+									<p>
+										<h4>EuroVOC compatibility <small>Verified first 1000 data</small></h4>
+										<div class="progress" >
+											<div class="bar" id="checkTagPortalsTableResultProgressBar" style="width:0%;"></div>
+										</div>
+										<table class="table table-condensed">
+											<thead><tr><th>Portal</th><th># Total Data</th><th># EuroVOC OK</th><th># EuroVOC KO</th><th>%</th><th>&nbsp;</th>
+											<tbody  id="checkTagPortalsTableBody">
+											</tbody>
+										</table>
+									</p>
+								</div>
+
+							</div>
+							<div id='utilitiesAutocompletePanel'></div>
+							<h3>
+								3 - Autocomplete text field with EuroVOC tags
+								<div class='pull-right'><small><a href="#" class='utilitiesScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='utility-content-panel'>
+								<p>This example shows how to implement a text input with suggest on EuroVOC tags. The example load all the avaibles tags, in the url used by the ajax call is possible to add filters (eg languages)</p>
+								<p>Suggests found: <strong><span id="autocompleteTagNumFoundText">0</span></strong> - URL used &nbsp;&nbsp;<code><a id="autocompleteTagUrlText" href="#" target='_blank'></a></code></p>
+								<p>
+									<select id="autocompleteInputLangSelect"></select>
+									<input class="input-xlarge" type="text" data-provide="typeahead" id="autocompleteTagText" placeholder="Type some characters...">
+								</p>
+								<h3>How it works</h3>
+								<p>
+									<p>This example uses the javascript plugin <a href='https://github.com/twitter/typeahead.js/' target='_blank'>typeahead.js</a> and it supposed that the input text has <span class='url'><strong>id='suggestText'</strong></span> and the language select has <span class='url'><strong>id='suggestLang'</strong> </span>
+									</p>
+									
+								</p>
+								<p>
+									<pre class="prettyprint" >
+var suggest = $("#suggestText").val();	
+var lang = $("#suggestLang").val();								
+var suggesttUrl = <i>URL_PROXY_ONTOLOGY</i>+encodeURIComponent("search_text_"+lang+":"+suggest+"*&amp;start=0&rows=20&amp;wt=json");							
+suggestText.typeahead({
+	source: function( request, response ) {
+		$.ajax({ dataType: "json",url: suggesttUrl}).done(function( data ) {
+				var suggests = new Array();
+				$.each(data.response.docs, function(index, doc) {
+					suggests[index] =  doc.term;
+				});
+				return response(suggests);
+			});
+		}
+	});
+									</pre>
+								</p>
+							</div>
+							<div id='utilitiesServerProxyPanel'></div>
+							<h3>
+								4 - Server Proxy
+								<div class='pull-right'><small><a href="#" class='utilitiesScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='utility-content-panel'>
+								<p>Due to the <strong>same origin policy</strong> is not possible via javascript upload the contents of the search query directly in the page.
+								This problem can be easily solved by providing a simple <strong>server side proxy</strong>  that routes the calls</p>
+								<p>Below is an example of a proxy written in <strong>php</strong>.</p>
+								
+								<p>
+									<h4>Client - Javascript</h4>
+									<pre class="prettyprint" >
+// example1:  javascript query url that search  everythings in data and response the first 20 records in json format
+var urlDocument = "proxy.php?path="+("documents/select/")+"&amp;params=q=" +encodeURIComponent("*:*&amp;start=0&amp;rows=20&amp;wt=json");
+
+// example2:  javascript query url that search the term water in the ontology and response the first 10 records in json format
+var urlDocument = "proxy.php?path="+("ontology/select/")+"&amp;params=q=" +encodeURIComponent("term:water&amp;start=0&amp;rows=10&amp;wt=json");
+									
+									</pre>
+									<h4>Server - Proxy PHP</h4>
+									<pre class="prettyprint" >
+&lt;?php
+  $url = "http://opendata-federation.csi.it/fed-homer/".$_GET['path']."?".$_GET['params'];
+  $result = file_get_contents($url);
+  // choose the output format 
+  if (strpos($url,'wt=xml') !== false) {
+	header('Content-type: application/xml');
+  } 
+  else{
+	header('Content-type: application/json');
+  }
+  echo $result;
+?&gt;	
+									</pre>
+								</p>
+							</div>
+							<div id='utilitiesTagCloudPanel'></div>
+							<h3>
+								5 - Tag Cloud
+								<div class='pull-right'><small><a href="#" class='utilitiesScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='utility-content-panel'>
+								<p>This example shows how to create a tag cloud. Via Javascript ask to the Federated Search Engine the statistics on Tag used, than populate a tag cloud.</p>
+								<p>Load tag url &nbsp;&nbsp;<code><a id="loadCloudTagUrl" href="" target='_blank'></a></code></p>
+								<p><a href='#' id='showLoadCloudTagUrlProxy' class=''>Show load tag url proxy</a> 
+									&nbsp;&nbsp;<code style="display:none;" id='loadCloudTagProxyContainer'><a  id="loadCloudTagProxy" href="" target='_blank'></a></code>
+								</p>
+								<div class='row'>
+									<div class='span4'>
+										<h4>HTML</h4>
+										<pre class="prettyprint" >
+&lt;div  id='tagCloudPanel'&gt;&lt;/div&gt;</pre>
+										<h4>Style</h4>
+										<pre class="prettyprint" >
+#tagCloudPanel{
+	width: 500px;
+	height: 400px;
+}
+
+.tag-cloud-item {
+	text-align: center;
+	padding: .3em;
+	font-weight: bold;
+}</pre>
+									</div>
+									
+									<div class='span4 offset1'>
+										<h3 class='utilities-color'>&nbsp;</h3>
+										<div id='tagCloudPanel'></div>
+									</div>
+								</div>
+								<div class='row'>
+									<div class='span9'>
+										<h4>Javascript</h4>
+										<pre class="prettyprint" >
+function loadCloudTags(){
+  var tagsArray =  {"Tag": "Count"};
+  // the url to get the statistic on tags ordered by count descending
+  var action ="*:*&rows=0&facet=true&facet.limit=-1&wt=json&facet.sort=count&facet.field=tag";
+  var url_facet = URL_PROXY_DOCUMENTS + encodeURIComponent(action);
+  $.ajax({ dataType: "json",url: url_facet}).done(function( data ) {
+    var counter = 0;
+    var maxCount = 0;
+    var minCount = 0;
+    // loop on the first 30 records and save the max and the min occourrence
+    $.each(data.facet_counts.facet_fields["tag"], function(value, label) {
+      if(counter % 2 == 0){
+        var count = data.facet_counts.facet_fields["tag"][value+1];
+        tagsArray[label]= count;
+        if(count>maxCount) maxCount = count;
+        if(count<minCount) minCount = count;
+      }
+      counter++;
+      // the response json has one row the tag and on the next row the count, so if we want the first 30 tags, we have to break after 60 rows
+      if(counter == 60) 
+        return false;
+    });
+    
+    // the size of the fonts: more occourences -> font bigger
+    var maxFontSize = 32;
+    var minFontSize = 4;
+    
+    var cloudHtml = "";
+    counter = 0;
+    var tagCloudItems = new Array();
+    // prepare the html items for the cloud
+    $.each(tagsArray, function(label, count) {
+      // the firs row is the labels (tag, count)
+      if(counter>0){
+        // font size as a percentage of the number of occurrences
+        var fontSize = minFontSize+(count-minCount)/(maxCount-minCount)*(maxFontSize-minFontSize);
+        tagCloudItems[counter-1] = "&lt;span class='tag-cloud-item' style='font-size:"+Math.round(fontSize)+"px'&gt;"+label+"&lt;/span&gt; ";
+      }
+      counter++;
+    });  
+    // randomize the tags order!
+    tagCloudItems.sort(function() {
+      return .5 - Math.random();
+    });
+    
+    // finnally add the tags to the cloud
+    $.each(tagCloudItems, function(index, value ) {
+      cloudHtml += value;
+    });
+    
+    $("#tagCloudPanel").html(cloudHtml);
+
+  });
+}</pre>							
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="pivot-item-5" class="pivot-item">
+							<div class="page-header">
+								<h1>Statistics<small></small></h1>
+							</div>
+							<p>
+								Some useful features to help on developing the search page
+								<ol>
+									<li><a href="#" id="statisticsHomerCategoryLink">Homer category distribution</a></li>
+									<li><a href="#" id="statisticsPortalLink">Portals distribution</a></li>
+									<li><a href="#" id="statisticsTagsLink">Tags distribution</a></li>
+									<li><a href="#" id="statisticsConceptsInPortalsLink">EuroVOC Concepts in Portals distribution</a></li>
+								</ol>
+							</p>
+							<div id='statisticsHomerCategoryPanel'></div>							
+							<h3>
+								1 - Homer category distribution
+								<div class='pull-right'><small><a href="#" class='statisticsScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='statistics-content-panel'>
+								<div class='row'>
+									<div class="span6">
+										<div id="statistic-homer-category-chart" style="width: auto; height: auto;"></div>
+									</div>	
+									<div clasS="span4">
+										<table id="statistic-homer-category-table" class='table table-condensed'>
+											<thead><tr><th>Category</th><th>Count</th></tr></thead>
+											<tbody id="statistic-homer-category-tablebody"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>	
+							<div id='statisticsPortalPanel'></div>							
+							<h3>
+								2 - Portals distribution
+								<div class='pull-right'><small><a href="#" class='statisticsScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							
+							<div class='statistics-content-panel'>
+								<div class='row'>
+									<div class="span6">
+										<div  id="statistic-homer-portal-chart"  style="width: auto; height: auto;"></div>
+									</div>	
+									<div clasS="span4">
+										<table id="statistic-homer-portal-table" class='table table-condensed'>
+											<thead><tr><th>Portal</th><th>Count</th></tr></thead>
+											<tbody id="statistic-homer-portal-tablebody"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>	
+							<div id='statisticsTagsPanel'></div>							
+							<h3>
+								3 - Tags distribution
+								<div class='pull-right'><small><a href="#" class='statisticsScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='statistics-content-panel'>
+								<div class='row'>
+									<div class="span6">
+										<div id="statistic-homer-tag-chart" style="width: auto; height: auto;"></div>
+									</div>	
+									<div clasS="span4">
+										<table id="statistic-homer-tag-table" class='table table-condensed'>
+											<thead><tr><th>Tag</th><th>Count</th></tr></thead>
+											<tbody id="statistic-homer-tag-tablebody"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div id='statisticsConceptsInPortalsPanel'></div>							
+							<h3>
+								4 - EuroVOC Concepts in Portals distribution
+								<div class='pull-right'><small><a href="#" class='statisticsScrollTopLink span2 text-right' ><i class="icon-arrow-up-5"></i> Back top</a></small></div>
+							</h3>
+							<div class='statistics-content-panel'>
+								<div class='row'>
+									<div class='span3'>
+										<label class=' '>Language</label>
+										<select id="statistictConceptsInPortalLangSelect">
+										</select>
+										<label class=' '>EuroVOC Concepts</label>
+										<select id="statistictConceptsInPortalSelect" size="12">
+										</select>					
+									</div>
+									<div class='span3'>
+										<div id="statistic-concepts-in-portal-chart" style="width: auto; height: auto;"></div>
+									
+									</div>
+									<div class='span4'>
+										<h4><span id='statistictConceptsInPortalSelectedTag'></span></h4>
+										<table id="statistictConceptsInPortalTable" class='table table-condensed'>
+											<thead><tr><th>Portal</th><th>Count</th></tr></thead>
+											<tbody id="statistic-concepts-in-portal-tablebody"></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</div>   
+	<footer class="bs-footer">
+		<div class="container">
+			<p>Designed and built by <a href="http://www.csipiemonte.it/en/" target='_blank'>CSI Piemonte</a>.</p>
+			<p>
+				This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>&nbsp;&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> 
+			</p>
+			<p>&nbsp;</p>
+			<div class='row'>
+				<div class='offset2 span2'>
+					<a href="http://www.homerproject.eu" target='_blank'><img src='assets/img/logo-homer_footer.jpg' alt='Homer Project' title ='Homer Project'></a>
+				</div>
+				<div class='offset1 span2' >
+						<a href="http://www.programmemed.eu/" target='_blank'><img src='assets/img/logo_programMed_footer.jpg' alt='MED Programme' title ='MED Programme'></a>
+				</div>	
+				<div class='offset1 span2'>
+					<a href="http://www.csipiemonte.it/en/" target='_blank'><img src='assets/img/logo_csipiemonte_footer.jpg' alt='CSI Piemonte' title ='CSI Piemonte'></a>
+				</div>
+			</div>
+
+			<p>&nbsp;</p>
+			<p>
+				<a href='http://www.dati.piemonte.it' target='_blank'>
+					<button class="win-command" rel="tootlip" title="Command with icon and label with border ring">
+						<span class="win-commandicon win-commandring  icon-earth"></span>
+						<span class="win-label">www.dati.piemonte.it</span>
+					</button>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href='https://www.facebook.com/OpenData.Piemonte' target='_blank'>
+					<button class="win-command" rel="tootlip" title="Command with icon and label with border ring">
+						<span class="win-commandicon win-commandring icon-facebook"></span>
+						<span class="win-label">OpenData.Piemonte</span>
+					</button>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href='https://twitter.com/OpenDataPiemont' target='_blank'>
+					<button class="win-command" rel="tootlip" title="Command with icon and label with border ring">
+						<span class="win-commandicon win-commandring icon-twitter"></span>
+						<span class="win-label">@dati.piemonte.it</span>
+					</button>
+				</a>
+			 </p>
+		  </div>
+		  <p>&nbsp;</p>
+	  	  <p>
+	  		This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies. 
+	  		<strong><a href="http://www.regione.piemonte.it/redaz/cookie.htm" target="_blank" class='cookie-policy-link'>Cookie Policy</a></strong>
+	  	  </p>
+
+    </footer>
+   
+   
+
+   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='assets/js/jquery-1.10.0.min.js'>\x3C/script>")</script>
+
+   <!--[if IE 7]>
+   <script type="text/javascript" src="scripts/bootmetro-icons-ie7.js">
+   <![endif]-->
+   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+   <script type="text/javascript" src="./assets/js/min/bootstrap.min.js"></script>
+   <script type="text/javascript" src="./assets/js/bootmetro-panorama.js"></script>
+   <script type="text/javascript" src="./assets/js/bootmetro-pivot.js"></script>
+   <script type="text/javascript" src="./assets/js/bootmetro-charms.js"></script>
+   <script type="text/javascript" src="./assets/js/bootstrap-datepicker.js"></script>
+
+   <script type="text/javascript" src="./assets/js/jquery.mousewheel.min.js"></script>
+   <script type="text/javascript" src="./assets/js/jquery.touchSwipe.min.js"></script>
+
+
+   <script type="text/javascript">
+
+      $('.panorama').panorama({
+         //nicescroll: false,
+         showscrollbuttons: true,
+         keyboard: true,
+         parallax: true
+      });
+
+
+      $('#pivot').pivot();
+
+   </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16673705-2', 'piemonte.it');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
