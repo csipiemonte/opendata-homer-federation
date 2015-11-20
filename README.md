@@ -12,7 +12,7 @@ Download all the source code e copy under a web server with **php enabled**
 ### Install under a  webserver without php
 All the application is html+javascript except the file proxy.php, whose only purpose is to forward calls to the search engine, and avoid the **Cross-origin resource sharing** error
 
-1. Rewrite the proxy.php file in the language supporter by the webserver choosed and expose under your domain
+1. Rewrite the proxy.php file in the language supported by the webserver choosen and expose under your domain
 2. Edit the file app.js and change the lines
 ```javascript
 var URL_PROXY_DOCUMENTS = "proxy.php?path="+("documents/select/")+"&params=q=";
